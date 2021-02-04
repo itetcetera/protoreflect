@@ -6,10 +6,10 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/jhump/protoreflect/codec"
-	"github.com/jhump/protoreflect/desc"
-	"github.com/jhump/protoreflect/internal/testprotos"
-	"github.com/jhump/protoreflect/internal/testutil"
+	"github.com/itetcetera/protoreflect/codec"
+	"github.com/itetcetera/protoreflect/desc"
+	"github.com/itetcetera/protoreflect/internal/testprotos"
+	"github.com/itetcetera/protoreflect/internal/testutil"
 )
 
 func TestBinaryUnaryFields(t *testing.T) {

@@ -7,8 +7,8 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/protoc-gen-go/descriptor"
-	"github.com/jhump/protoreflect/desc"
-	"github.com/jhump/protoreflect/dynamic"
+	"github.com/itetcetera/protoreflect/desc"
+	"github.com/itetcetera/protoreflect/dynamic"
 )
 
 type dependencies struct {
