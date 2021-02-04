@@ -220,23 +220,25 @@ const (
 
 // JsonName returns the default JSON name for a field with the given name.
 func JsonName(name string) string {
-	var js []rune
-	nextUpper := false
-	for i, r := range name {
-		if r == '_' {
-			nextUpper = true
-			continue
-		}
-		if i == 0 {
-			js = append(js, r)
-		} else if nextUpper {
-			nextUpper = false
-			js = append(js, unicode.ToUpper(r))
-		} else {
-			js = append(js, r)
-		}
-	}
-	return string(js)
+	// var js []rune
+	// nextUpper := false
+	// for i, r := range name {
+	// 	if r == '_' {
+	// 		nextUpper = true
+	// 		continue
+	// 	}
+	// 	if i == 0 {
+	// 		js = append(js, r)
+	// 	} else if nextUpper {
+	// 		nextUpper = false
+	// 		js = append(js, unicode.ToUpper(r))
+	// 	} else {
+	// 		js = append(js, r)
+	// 	}
+	// }
+	// return string(js)
+
+	return string(name)
 }
 
 // InitCap returns the given field name, but with the first letter capitalized.
