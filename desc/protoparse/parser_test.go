@@ -124,7 +124,7 @@ func TestSimpleParse(t *testing.T) {
 	testutil.Ok(t, err)
 	fd = res.fd
 	testutil.Eq(t, "../../internal/testprotos/pkg/desc_test_pkg.proto", fd.GetName())
-	testutil.Eq(t, "jhump.protoreflect.desc", fd.GetPackage())
+	testutil.Eq(t, "itetcetera.protoreflect.desc", fd.GetPackage())
 	testutil.Require(t, hasEnum(fd, "Foo"))
 	testutil.Require(t, hasMessage(fd, "Bar"))
 	protos[fd.GetName()] = res

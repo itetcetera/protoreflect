@@ -20,7 +20,7 @@ matrix:
 
 # accomodate forks
 before_install:
-  - mkdir -p $TRAVIS_BUILD_DIR $GOPATH/src/github.com/jhump
+  - mkdir -p $TRAVIS_BUILD_DIR $GOPATH/src/github.com/itetcetera
   - test ! -d $GOPATH/src/github.com/itetcetera/protoreflect && mv $TRAVIS_BUILD_DIR $GOPATH/src/github.com/itetcetera/protoreflect || true
 
 script:

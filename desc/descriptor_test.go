@@ -687,7 +687,7 @@ func TestServiceDescriptors(t *testing.T) {
 					name: "testprotos.TestService.DoSomething",
 					references: map[string]childCases{
 						"request":  {(*MethodDescriptor).GetInputType, refs("testprotos.TestRequest")},
-						"response": {(*MethodDescriptor).GetOutputType, refs("jhump.protoreflect.desc.Bar")},
+						"response": {(*MethodDescriptor).GetOutputType, refs("itetcetera.protoreflect.desc.Bar")},
 					},
 				},
 				{
@@ -700,7 +700,7 @@ func TestServiceDescriptors(t *testing.T) {
 				{
 					name: "testprotos.TestService.DoSomethingAgain",
 					references: map[string]childCases{
-						"request":  {(*MethodDescriptor).GetInputType, refs("jhump.protoreflect.desc.Bar")},
+						"request":  {(*MethodDescriptor).GetInputType, refs("itetcetera.protoreflect.desc.Bar")},
 						"response": {(*MethodDescriptor).GetOutputType, refs("testprotos.AnotherTestMessage")},
 					},
 				},

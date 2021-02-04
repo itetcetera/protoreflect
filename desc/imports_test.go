@@ -24,7 +24,7 @@ func TestResolveImport(t *testing.T) {
 	})
 	expectPanic(t, func() {
 		// not a real registered path
-		desc.RegisterImportPath("github.com/jhump/x/y/z/foobar.proto", "x/y/z/foobar.proto")
+		desc.RegisterImportPath("github.com/itetcetera/x/y/z/foobar.proto", "x/y/z/foobar.proto")
 	})
 }
 

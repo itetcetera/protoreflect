@@ -22,9 +22,9 @@ func TestLoadServiceDescriptors(t *testing.T) {
 	sd := sds["testprotos.TestService"]
 
 	cases := []struct{ method, request, response string }{
-		{"DoSomething", "testprotos.TestRequest", "jhump.protoreflect.desc.Bar"},
+		{"DoSomething", "testprotos.TestRequest", "itetcetera.protoreflect.desc.Bar"},
 		{"DoSomethingElse", "testprotos.TestMessage", "testprotos.TestResponse"},
-		{"DoSomethingAgain", "jhump.protoreflect.desc.Bar", "testprotos.AnotherTestMessage"},
+		{"DoSomethingAgain", "itetcetera.protoreflect.desc.Bar", "testprotos.AnotherTestMessage"},
 		{"DoSomethingForever", "testprotos.TestRequest", "testprotos.TestResponse"},
 	}
 

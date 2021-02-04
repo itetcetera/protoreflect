@@ -37,11 +37,11 @@ message Frobnitz {
 }
 
 message Whatchamacallit {
-   required jhump.protoreflect.desc.Foo foos = 1;
+   required itetcetera.protoreflect.desc.Foo foos = 1;
 }
 
 message Whatzit {
-   repeated jhump.protoreflect.desc.Bar gyzmeau = 1;
+   repeated itetcetera.protoreflect.desc.Bar gyzmeau = 1;
 }
 
 extend TopLevel {
