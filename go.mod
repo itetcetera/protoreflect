@@ -1,4 +1,4 @@
-module github.com/jhump/protoreflect
+module github.com/itetcetera/protoreflect
 
 go 1.13
 
