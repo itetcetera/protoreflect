@@ -83,7 +83,7 @@ is backed by a message descriptor and a map of fields->values, instead of a gene
 is useful for acting generically with protocol buffer messages, without having to generate and link
 in Go code for every kind of message. This is particularly useful for general-purpose tools that
 need to operate on arbitrary protocol buffer schemas. This is made possible by having the tools load
-descriptors at runtime.
+descriptors at runtime.  
 
 *[Read more ≫](https://godoc.org/github.com/itetcetera/protoreflect/dynamic)*
 
